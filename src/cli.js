@@ -1,3 +1,4 @@
+// Author: Sandeep Belgavi
 import { readFileSync } from 'node:fs';
 import cassandra from 'cassandra-driver';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';

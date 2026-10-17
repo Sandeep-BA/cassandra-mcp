@@ -1,3 +1,4 @@
+// Author: Sandeep Belgavi
 import { identifier } from './config.js';
 
 export class SafeError extends Error {}

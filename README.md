@@ -1,5 +1,7 @@
 # Cassandra MCP
 
+**Author: Sandeep Belgavi**
+
 A small, read-only [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/architecture) server for inspecting authorized Cassandra tables and reading bounded partitions from a local MCP client.
 
 **Status: v0.1.0 preview, installed from source.** There is no npm release, hosted service, AI model or production certification. The earlier AICassindra page advertised an unavailable package; this repository supplies an actual implementation with explicit limits. Do not use the old `npx @belgavi/cassandra-mcp` command.

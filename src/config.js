@@ -1,3 +1,4 @@
+// Author: Sandeep Belgavi
 export const identifier = /^[a-z][a-z0-9_]{0,47}$/;
 export function config(env = process.env) {
   const tables = (env.CASSANDRA_TABLES || '').split(',').map(s => s.trim()).filter(Boolean);
