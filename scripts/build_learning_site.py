@@ -36,7 +36,7 @@ def diagram(labels, title):
         parts.append(f'<rect x="25" y="{y}" width="390" height="58" rx="10" fill="{("#102b3e" if i == 0 else "#ffffff")}" stroke="#bccfd9"/><circle cx="52" cy="{y+29}" r="15" fill="#087d78"/><text x="52" y="{y+34}" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="13">{i+1}</text><text x="82" y="{y+35}" fill="{("white" if i == 0 else "#162333")}" font-family="system-ui,sans-serif" font-size="16">{e(label)}</text>')
         if i < len(labels)-1:
             parts.append(f'<path d="M220 {y+59} v17 m-5 -5 5 5 5 -5" stroke="#087d78" fill="none" stroke-width="2"/>')
-    return "".join(parts) + '</svg>'
+    return '<!-- Author: Sandeep Belgavi -->\n' + "".join(parts) + '</svg>'
 
 
 def main():
