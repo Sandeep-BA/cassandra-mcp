@@ -103,7 +103,9 @@ def main():
         slug = source.stem
         path = '/blogs/decision_systems/' + slug + '.html'
         paragraphs = [p for p in content.split('\n\n') if not p.startswith(('#', 'Author:', '<!--'))]
-        description = re.sub(r'\s+', ' ', paragraphs[0])[:165]
+        description = re.sub(r'\s+', ' ', paragraphs[0])
+        if len(description) > 165:
+            description = description[:162].rsplit(' ', 1)[0].rstrip(' ,;:') + '…'
         labels = re.search(r'<!-- diagram:(.*?) -->', content).group(1).split('|')
         write('mcp/diagrams/' + slug + '.svg', diagram(labels, title))
         content = re.sub(r'<!-- diagram:.*? -->', f'<figure><img src="/mcp/diagrams/{slug}.svg" alt="Proposed application flow: {e(" then ".join(labels))}" loading="lazy"><figcaption>Application architecture by Sandeep Belgavi. This diagram does not depict undisclosed model internals or deployed infrastructure.</figcaption></figure>', content)
