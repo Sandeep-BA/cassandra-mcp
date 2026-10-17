@@ -5,7 +5,7 @@ import { SafeError } from './service.js';
 const id = z.string().regex(/^[a-z][a-z0-9_]{0,47}$/);
 const tableInput = { keyspace: id, table: id };
 export function createServer(service, { audit = line => process.stderr.write(JSON.stringify(line) + '\n'), now = Date.now } = {}) {
-  const server = new McpServer({ name: 'cassandra-mcp', version: '0.1.0' });
+  const server = new McpServer({ name: 'cassandra-mcp', version: '0.2.0' });
   let busy = false, windowStart = now(), calls = 0;
   function register(name, description, inputSchema, fn) {
     server.registerTool(name, { description, inputSchema, annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true } }, async args => {

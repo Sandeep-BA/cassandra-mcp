@@ -4,7 +4,21 @@
 
 A small, read-only [Model Context Protocol](https://modelcontextprotocol.io/docs/learn/architecture) server for inspecting authorized Cassandra tables and reading bounded partitions from a local MCP client.
 
-**Status: v0.1.0 preview, installed from source.** There is no npm release, hosted service, AI model or production certification. The earlier AICassindra page advertised an unavailable package; this repository supplies an actual implementation with explicit limits. Do not use the old `npx @belgavi/cassandra-mcp` command.
+**Status: v0.2.0 preview, installed from source.** Node.js, Python and Java implementations are included. There is no npm release, hosted service, AI model or production certification. The earlier AICassindra page advertised an unavailable package; this repository supplies actual implementations with explicit limits. Do not use the old `npx @belgavi/cassandra-mcp` command.
+
+## Start here
+
+| What you want | Location |
+| --- | --- |
+| Node.js Cassandra server | Setup below; source in `src/` |
+| Python Cassandra server | [Python setup](implementations/python/README.md) |
+| Java executable server | [Java setup](implementations/java/README.md) |
+| 100 researched MCP projects | [Catalog and selection method](catalog/README.md), [machine-readable snapshot](catalog/servers.json) |
+| Reusable agent skills | [Skill installation and scope](skills/README.md) |
+| 100 Java agent recipes | [Agent Decision Lab](https://github.com/Sandeep-BA/agent-decision-lab) |
+| Jev and decision architecture articles | [12 source articles](https://github.com/Sandeep-BA/agent-decision-lab/tree/main/articles) |
+
+The external catalog links upstream projects; this repository does not copy, install or claim authorship of those servers. The three Cassandra implementations are original code by Sandeep Belgavi. The agent recipes live in one companion repository so their Java runtime and articles can be cloned independently.
 
 ## Tools
 
@@ -23,7 +37,7 @@ Requires Node.js 22 or newer, npm, Git and a reachable Cassandra cluster. The im
 ```sh
 git clone https://github.com/Sandeep-BA/cassandra-mcp.git
 cd cassandra-mcp
-git checkout v0.1.0
+git checkout v0.2.0
 npm ci --ignore-scripts
 npm test
 ```
@@ -109,6 +123,8 @@ This is a local, single-operator stdio integration. Do not expose it as a multi-
 
 ## Validation
 
+Node: 10 fixture/protocol tests. Python: 17 tests. Java: 6 JUnit tests. `node scripts/check_transports.mjs` launches all three real executables and checks initialization, tool discovery, read-only annotations, table listing, denied table access and invalid limits. Build Java and install the Python environment first. Live Cassandra validation remains separate; no live cluster was available during development.
+
 `npm test` covers configuration, allowlist enforcement, parameter binding, composite keys, projection validation, MCP initialization/discovery/calls, error redaction, response limits, concurrency, rate limiting, and spawning the actual stdio executable. Database operations in these tests use controlled fixtures. The stdio test exercises the real SDK and entrypoint but does not connect to Cassandra.
 
 For your own live database, supply the connection settings above and these additional variables, then run `npm run test:live`:
@@ -130,7 +146,7 @@ Use shell-appropriate quoting to preserve JSON. This read-only check describes t
 
 ## Development and references
 
-CI runs Node 22/24 tests and a dependency audit. A green local test result is not a claim that hosted CI or live database tests ran. Issues and contributions are welcome; include redacted reproduction steps, Node/Cassandra versions and expected behavior.
+CI runs Node 22/24 tests and a dependency audit, plus Java/Python and shared transport checks. See the actual workflow run for its current result. A green local test result is not a claim that hosted CI or live database tests ran. Issues and contributions are welcome; include redacted reproduction steps, runtime/Cassandra versions and expected behavior.
 
 - [MCP SDK server documentation](https://ts.sdk.modelcontextprotocol.io/server)
 - [Apache Cassandra Node.js driver](https://github.com/apache/cassandra-nodejs-driver)

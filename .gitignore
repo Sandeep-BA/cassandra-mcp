@@ -4,3 +4,10 @@ node_modules/
 *.key
 coverage/
 *.log
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+target/
+dist/
+site-preview/

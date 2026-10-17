@@ -1,0 +1,101 @@
+# Author: Sandeep Belgavi. Curated upstream projects, not copied implementations.
+upstash/context7	Developer tools	Retrieve version-specific library documentation for coding tasks.
+ChromeDevTools/chrome-devtools-mcp	Browser automation	Inspect browser behavior and debug web applications through DevTools.
+DeusData/codebase-memory-mcp	Developer tools	Build and query a persistent code knowledge graph.
+microsoft/playwright-mcp	Browser automation	Automate browser interactions through Playwright.
+github/github-mcp-server	Developer tools	Work with GitHub repositories, issues and pull requests.
+oraios/serena	Developer tools	Navigate and edit source code with semantic tools.
+czlonkowski/n8n-mcp	Automation	Inspect n8n node capabilities and build workflow definitions.
+googleapis/mcp-toolbox	Databases	Expose configured database operations to MCP clients.
+GLips/Figma-Context-MCP	Design	Bring Figma layout information into coding workflows.
+mrexodia/ida-pro-mcp	Security analysis	Inspect binaries in an authorized IDA Pro analysis environment.
+hangwin/mcp-chrome	Browser automation	Connect browser sessions through a Chrome extension.
+BeehiveInnovations/pal-mcp-server	AI collaboration	Coordinate model-assisted reviews and development tasks.
+apify/apify-mcp-server	Web research	Use Apify actors for structured web data workflows.
+LaurieWired/GhidraMCP	Security analysis	Connect Ghidra reverse-engineering workflows to MCP.
+wonderwhy-er/DesktopCommanderMCP	Local tools	Access terminal and file operations from a local assistant.
+awslabs/mcp	Cloud infrastructure	Explore a suite of AWS-focused MCP servers.
+CursorTouch/Windows-MCP	Local tools	Operate Windows desktop applications through MCP tools.
+idosal/git-mcp	Developer tools	Expose repository documentation and source context through MCP.
+firecrawl/firecrawl-mcp-server	Web research	Fetch, crawl and search web content using Firecrawl.
+Gentleman-Programming/engram	Memory	Persist and retrieve coding-agent context locally.
+AgentDeskAI/browser-tools-mcp	Browser automation	Inspect browser logs and debugging information.
+BrowserMCP/mcp	Browser automation	Connect an existing browser to an MCP client.
+lharries/whatsapp-mcp	Productivity	Integrate WhatsApp message workflows with a local client.
+getsentry/MobileBuildMCP	Developer tools	Support mobile application build and development workflows.
+Coding-Solo/godot-mcp	Design	Control Godot project and editor workflows.
+sooperset/mcp-atlassian	Productivity	Work with Jira and Confluence data.
+54yyyu/zotero-mcp	Research	Search and use a Zotero research library.
+openclaw/Peekaboo	Local tools	Capture and interact with macOS application interfaces.
+exa-labs/exa-mcp-server	Web research	Search and retrieve web sources through Exa.
+homeassistant-ai/ha-mcp	Automation	Connect Home Assistant entities and home-automation workflows.
+callstack/agent-device	Developer tools	Automate and verify mobile app interactions.
+makenotion/notion-mcp-server	Productivity	Connect Notion workspace content to MCP clients.
+MarkusPfundstein/mcp-obsidian	Productivity	Access an Obsidian vault through its local REST API.
+antvis/mcp-server-chart	Design	Generate charts from structured input data.
+cloudflare/mcp-server-cloudflare	Cloud infrastructure	Work with Cloudflare platform services through MCP.
+Pimzino/spec-workflow-mcp	Developer tools	Guide specification and implementation workflows.
+CodeGraphContext/CodeGraphContext	Developer tools	Index source relationships into a queryable code graph.
+haris-musa/excel-mcp-server	Productivity	Read and modify Excel workbooks through tools.
+stickerdaniel/linkedin-mcp-server	Productivity	Access LinkedIn information through an MCP integration.
+bytebase/dbhub	Databases	Connect SQL database inspection and query workflows.
+samuelgursky/davinci-resolve-mcp	Design	Connect DaVinci Resolve editing workflows to MCP.
+grafana/mcp-grafana	Observability	Query Grafana dashboards and observability context.
+taylorwilsdon/google_workspace_mcp	Productivity	Integrate Google Workspace documents and collaboration tools.
+blazickjp/arxiv-mcp-server	Research	Find and inspect arXiv papers for literature workflows.
+Jpisnice/shadcn-ui-mcp-server	Design	Retrieve shadcn component context for interface development.
+neka-nat/freecad-mcp	Design	Control FreeCAD modeling tasks through MCP.
+zinja-coder/jadx-ai-mcp	Security analysis	Connect JADX analysis of authorized Android binaries.
+openags/paper-search-mcp	Research	Search scholarly sources through a unified tool interface.
+mixelpixx/KiCAD-MCP-Server	Design	Connect KiCad electronic-design workflows to an assistant.
+jgravelle/jcodemunch-mcp	Developer tools	Retrieve source code using symbol-oriented navigation.
+mongodb-js/mongodb-mcp-server	Databases	Inspect MongoDB data and database resources.
+redis/mcp-redis	Databases	Interact with Redis data structures through MCP.
+ClickHouse/mcp-clickhouse	Databases	Query and inspect ClickHouse analytics databases.
+supabase-community/supabase-mcp	Databases	Work with Supabase projects and database development tools.
+neondatabase/mcp-server-neon	Databases	Manage Neon database development workflows.
+neo4j-contrib/mcp-neo4j	Databases	Connect graph querying and Neo4j tooling.
+qdrant/mcp-server-qdrant	Databases	Store and retrieve context with Qdrant vector search.
+elastic/mcp-server-elasticsearch	Databases	Search Elasticsearch data through MCP tools.
+crystaldba/postgres-mcp	Databases	Inspect PostgreSQL schemas and database performance.
+motherduckdb/mcp-server-motherduck	Databases	Connect MotherDuck analytics through its MCP integration.
+brave/brave-search-mcp-server	Web research	Use Brave Search for web and other search verticals.
+tavily-ai/tavily-mcp	Web research	Search and extract web content for research tasks.
+perplexityai/modelcontextprotocol	Web research	Access Perplexity search and research capabilities.
+jina-ai/MCP	Web research	Use Jina search and reader tools for web context.
+BrightData/brightdata-mcp	Web research	Access Bright Data web retrieval services.
+scrapegraphai/scrapegraph-mcp	Web research	Extract structured data from web sources.
+supadata-ai/mcp	Web research	Retrieve supported video and web content through Supadata.
+getsentry/sentry-mcp	Observability	Inspect application issues and error context from Sentry.
+signoz/signoz-mcp-server	Observability	Query SigNoz observability information.
+metoro-io/metoro-mcp-server	Observability	Investigate Kubernetes observability data using Metoro.
+hashicorp/terraform-mcp-server	Cloud infrastructure	Retrieve Terraform ecosystem and infrastructure context.
+hashicorp/vault-mcp-server	Cloud infrastructure	Integrate Vault workflows with scoped MCP access.
+GoogleCloudPlatform/cloud-run-mcp	Cloud infrastructure	Work with Cloud Run application deployment workflows.
+Flux159/mcp-server-kubernetes	Cloud infrastructure	Connect Kubernetes cluster tools to an MCP client.
+manusa/kubernetes-mcp-server	Cloud infrastructure	Provide Kubernetes-native MCP resource operations.
+QuantGeekDev/docker-mcp	Cloud infrastructure	Inspect and manage local Docker resources.
+stripe/agent-toolkit	Business tools	Integrate Stripe API operations through agent tools and MCP.
+paypal/agent-toolkit	Business tools	Connect PayPal commerce operations to agent tooling.
+square/square-mcp-server	Business tools	Integrate Square platform operations through MCP.
+resend/mcp-send-email	Business tools	Send email through Resend from an authorized tool workflow.
+twilio-labs/mcp	Business tools	Connect Twilio communications APIs to MCP clients.
+modelcontextprotocol/servers	Reference suite	Study the official reference server implementations and their limits.
+gitkraken/gk-cli	Developer tools	Access Git and development workflow integrations including MCP.
+JetBrains/mcp-jetbrains	Developer tools	Connect JetBrains IDE tools to an external MCP client.
+IvanMurzak/Unity-MCP	Design	Expose Unity development and testing tools to agents.
+ahujasid/blender-mcp	Design	Connect Blender modeling and scene workflows to MCP.
+DayuanJiang/next-ai-draw-io	Design	Create and edit draw.io diagrams with an MCP-enabled workflow.
+mksglu/context-mode	Developer tools	Reduce and organize tool output within coding-agent context.
+xpzouying/xiaohongshu-mcp	Productivity	Connect Xiaohongshu content workflows through MCP.
+bethington/ghidra-mcp	Security analysis	Inspect authorized binaries through Ghidra MCP tools.
+jacob-bd/gemini-notebook-mcp-cli	Research	Access Gemini Notebook research workflows through MCP.
+epiral/bb-browser	Browser automation	Control a local Chrome session through browser tools.
+Ryze-AI-Adgent/open-seo-mcp-skills	Web research	Inspect search visibility and SEO workflows through tools.
+Minidoracat/mcp-feedback-enhanced	Developer tools	Collect interactive user feedback within development workflows.
+punitarani/fli	Productivity	Explore flight search data through an MCP interface.
+microsoft/mcp	Cloud infrastructure	Explore the Microsoft MCP server implementation suite.
+aws/agent-toolkit-for-aws	Cloud infrastructure	Use AWS-supported agent tools and MCP integrations.
+coddingtonbear/obsidian-local-rest-api	Productivity	Expose local Obsidian vault operations through supported APIs and MCP.
+MinishLab/semble	Developer tools	Search source-code context for development assistants.
+vitali87/code-graph-rag	Developer tools	Retrieve and explore code relationships through graph tools.

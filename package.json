@@ -1,6 +1,6 @@
 {
   "name": "@belgavi/cassandra-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Sandeep Belgavi",
   "description": "Read-only, allowlisted Cassandra tools over MCP stdio",
   "type": "module",
