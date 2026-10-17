@@ -1,0 +1,12 @@
+{
+  "name": "@belgavi/cassandra-mcp",
+  "version": "0.1.0",
+  "description": "Read-only, allowlisted Cassandra tools over MCP stdio",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node src/cli.js", "test": "node --test", "test:live": "node scripts/live-check.js" },
+  "dependencies": { "@modelcontextprotocol/sdk": "1.32.1", "cassandra-driver": "4.10.0", "zod": "3.25.76" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Sandeep-BA/cassandra-mcp.git" }
+}
