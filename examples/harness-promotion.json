@@ -1,0 +1,9 @@
+{
+  "trainingGroups": ["development-source"],
+  "cases": [
+    {"group": "holdout-a", "baseline": true, "candidate": true, "critical": true},
+    {"group": "holdout-b", "baseline": false, "candidate": true, "critical": false},
+    {"group": "holdout-c", "baseline": true, "candidate": true, "critical": false},
+    {"group": "holdout-d", "baseline": false, "candidate": false, "critical": false}
+  ]
+}

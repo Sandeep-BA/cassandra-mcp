@@ -13,12 +13,23 @@ A small, read-only [Model Context Protocol](https://modelcontextprotocol.io/docs
 | Node.js Cassandra server | Setup below; source in `src/` |
 | Python Cassandra server | [Python setup](implementations/python/README.md) |
 | Java executable server | [Java setup](implementations/java/README.md) |
-| Five original interactive labs | [Browser models](site/decision-labs.js), [lessons](scripts/learning_labs.py), [boundary tests](test/decision-labs.test.cjs) |
+| Eight original interactive labs | [Browser models](site/decision-labs.js), [lessons](scripts/learning_labs.py), [boundary tests](test/decision-labs.test.cjs) |
 | Reusable agent skills | [Skill installation and scope](skills/README.md) |
 | 100 Java agent recipes | [Agent Decision Lab](https://github.com/Sandeep-BA/agent-decision-lab) |
 | Jev and decision architecture articles | [12 source articles](https://github.com/Sandeep-BA/agent-decision-lab/tree/main/articles) |
 
-The public learning hub features our own implementations and five editable browser experiments. Historical catalog research is retained as data only and is not used to generate the public site. The three Cassandra implementations are original code by Sandeep Belgavi. The agent recipes live in one companion repository so their Java runtime and articles can be cloned independently.
+The public learning hub features our own implementations and eight editable browser experiments. Historical catalog research is retained as data only and is not used to generate the public site. The three Cassandra implementations are original code by Sandeep Belgavi. The agent recipes live in one companion repository so their Java runtime and articles can be cloned independently.
+
+## Harness engineering
+
+Four original articles, three harness missions and an offline CLI share the same tested grading logic. These are synthetic teaching fixtures; no model is trained and no candidate is deployed automatically.
+
+```sh
+node scripts/run_harness.cjs promotion examples/harness-promotion.json
+npm test
+```
+
+Read [our harness articles](site/harness-articles), inspect [the shared models](site/harness-models.js), and run [the boundary tests](test/harness-models.test.cjs). Author: Sandeep Belgavi.
 
 ## Tools
 
