@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: Sandeep-BA/agent-decision-lab
-          ref: 2cb89d7
+          ref: 2cb89d747a459ddc421e92a68bfcab06dc99730d
           path: agent-source
       - uses: actions/setup-node@v4
         with:
