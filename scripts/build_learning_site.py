@@ -54,7 +54,7 @@ def main():
     recipes = json.loads((args.agent_root / 'src/main/resources/agents.json').read_text(encoding='utf-8'))
     articles = sorted((args.agent_root / 'articles').glob('[0-9]*.md'))
     assert len(recipes) == 100 and len(articles) == 12
-    for asset in ('learning-hub.css', 'learning-hub.js', 'decision-labs.css', 'decision-labs.js'):
+    for asset in ('learning-hub.css', 'learning-hub.js', 'decision-labs.css', 'decision-labs.js', 'mission-path.js'):
         write('mcp/' + asset, (ROOT / 'site' / asset).read_text(encoding='utf-8'))
     actions = f'<div class="actions"><a class="button" href="{REPO}">Clone the MCP toolkit</a><a class="button secondary" href="{AGENTS}">Explore agent code</a></div><div class="stats"><div><strong>3</strong><span>Cassandra runtimes</span></div><div><strong>5</strong><span>Interactive experiments</span></div><div><strong>100</strong><span>Runnable agent recipes</span></div><div><strong>12</strong><span>Architecture guides</span></div></div>'
     intro = hero('Open source / MCP & decision systems', 'Tools you can inspect. Agents you can test.', 'Build with bounded Cassandra tools, repair agent guardrails, and explore typed decision agents in Java. Every implementation has a clear scope and a testable contract.', actions)

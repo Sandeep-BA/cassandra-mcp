@@ -39,16 +39,5 @@
     return {status:'INVALID_INPUT',detail:'Unknown exercise.'};
   }
   if(typeof module!=='undefined')module.exports={evaluate};
-  if(!root.document)return;
-  document.querySelectorAll('[data-exercise]').forEach(section=>{
-    const editor=section.querySelector('textarea'),output=section.querySelector('output'),status=section.querySelector('[data-status]');
-    const baseline=editor.value;
-    section.querySelector('[data-reset]').addEventListener('click',()=>{editor.value=baseline;output.textContent='Run the fixture to inspect the result.';status.textContent='Ready';});
-    section.querySelector('[data-run]').addEventListener('click',()=>{
-      let result;
-      try{if(editor.value.length>32768)throw new Error('size');result=evaluate(section.dataset.exercise,JSON.parse(editor.value));}
-      catch{result={status:'INVALID_JSON',detail:'Supply valid JSON of at most 32 KiB. No input was sent anywhere.'};}
-      status.textContent=result.status;output.textContent=JSON.stringify(result,null,2);
-    });
-  });
+  root.ArenaLessons={evaluate};
 })(globalThis);
