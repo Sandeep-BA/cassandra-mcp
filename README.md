@@ -17,6 +17,7 @@ A small, read-only [Model Context Protocol](https://modelcontextprotocol.io/docs
 | Reusable agent skills | [Skill installation and scope](skills/README.md) |
 | 100 Java agent recipes | [Agent Decision Lab](https://github.com/Sandeep-BA/agent-decision-lab) |
 | Jev and decision architecture articles | [12 source articles](https://github.com/Sandeep-BA/agent-decision-lab/tree/main/articles) |
+| Host and Origin guard for local HTTP agent servers | [Loopback guard example](examples/localhost-http-guard/README.md) |
 
 The public learning hub features our own implementations and eight editable browser experiments. Historical catalog research is retained as data only and is not used to generate the public site. The three Cassandra implementations are original code by Sandeep Belgavi. The agent recipes live in one companion repository so their Java runtime and articles can be cloned independently.
 
