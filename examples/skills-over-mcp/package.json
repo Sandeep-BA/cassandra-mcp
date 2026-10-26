@@ -1,0 +1,15 @@
+{
+  "name": "@belgavi/cassandra-mcp-skills-over-mcp",
+  "version": "0.1.0",
+  "author": "Sandeep Belgavi",
+  "description": "Serve this repository's skills/ folder over MCP with the Skills extension (SEP-2640) from the TypeScript SDK 2.4.0, and verify it from a client.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node roundtrip.js", "test": "node --test catalog.check.js" },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/server": "2.4.0"
+  },
+  "license": "MIT"
+}
